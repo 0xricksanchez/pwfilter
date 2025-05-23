@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pwfilter"
+version = "0.1.0"
+description = "A Python tool to filter wordlists based on presets or custom regex."
+readme = "README.md"
+requires-python = ">=3.8"
+license-files = ["LICENSE"]
+authors = [{ name = "0x434b Name", email = "mail@0x434b.dev" }]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Topic :: Security",
+  "Topic :: Utilities",
+]
+
+dependencies = []
+
+[project.scripts]
+pwfilter = "pwfilter.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/0xricksanchez/pwfilter"
+
+[dependency-groups]
+dev = ["pytest>=8.3.5"]
